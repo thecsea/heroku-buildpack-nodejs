@@ -8,7 +8,9 @@ run_if_present() {
 }
 
 install_c_dependencies() {
-  apt-get install libstdc++6 -y
+    su
+    apt-get install libstdc++6 -y
+    exit
 }
 
 install_node_modules() {
