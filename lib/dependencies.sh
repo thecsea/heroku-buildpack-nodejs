@@ -7,6 +7,10 @@ run_if_present() {
   fi
 }
 
+install_c_dependencies() {
+  apt-get install libstdc++6 -y
+}
+
 install_node_modules() {
   local build_dir=${1:-}
 
